@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My tracker"
+rootProject.name = "Arc Tracker"
 include(":app")

@@ -113,7 +113,7 @@ fun SplashScreen(
                 // App Logo with subtle float animation
                 Image(
                     painter = painterResource(R.drawable.ic_app_icon),
-                    contentDescription = "Arc Logo",
+                    contentDescription = "Arc Tracker Logo",
                     modifier = Modifier
                         .size(84.dp)
                         .graphicsLayer { translationY = floatOffset }
@@ -126,7 +126,7 @@ fun SplashScreen(
                 // Brand Name & Tagline
                 Icon(
                     painter = painterResource(R.drawable.arc_wordmark),
-                    contentDescription = "Arc",
+                    contentDescription = "Arc Tracker",
                     tint = C.textPrimary,
                     modifier = Modifier.height(34.dp)
                 )

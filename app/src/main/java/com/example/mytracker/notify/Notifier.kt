@@ -44,8 +44,8 @@ import kotlin.math.absoluteValue
  */
 object Notifier {
 
-    private const val CHANNEL_QUIET = "cadence.reminders"
-    private const val CHANNEL_ALARM = "cadence.alarms"
+    private const val CHANNEL_QUIET = "arc_tracker.reminders"
+    private const val CHANNEL_ALARM = "arc_tracker.alarms"
     const val EXTRA_TAB = "tab"
 
     /** Everything this object has scheduled, so it can cancel before re-planning. */

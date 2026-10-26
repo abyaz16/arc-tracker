@@ -72,7 +72,7 @@ fun SettingsScreen(store: Store, db: Db, onBack: () -> Unit) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !permitted) {
             launcher.launch(Manifest.permission.POST_NOTIFICATIONS)
         } else if (!permitted) {
-            store.showToast("Turn on notifications for Arc in system settings")
+            store.showToast("Turn on notifications for Arc Tracker in system settings")
         } else {
             store.updateSettings { st -> st.copy(remindersEnabled = true) }
         }
@@ -231,7 +231,7 @@ fun SettingsScreen(store: Store, db: Db, onBack: () -> Unit) {
                                 val picked = ReminderStyle.from(k)
                                 store.updateSettings { st -> st.copy(reminderStyle = picked) }
                                 if (picked == ReminderStyle.ALARM && !canBeExact) {
-                                    store.showToast("Allow alarms for Arc to ring on the minute")
+                                    store.showToast("Allow alarms for Arc Tracker to ring on the minute")
                                 }
                             },
                         )
@@ -262,7 +262,7 @@ fun SettingsScreen(store: Store, db: Db, onBack: () -> Unit) {
                 Spacer(Modifier.height(Space.s4))
                 T(
                     "Android is currently blocking notifications for this app, so nothing will " +
-                        "arrive. Turn them on for Arc in the system settings.",
+                        "arrive. Turn them on for Arc Tracker in the system settings.",
                     CadenceType.caption, C.overdue,
                 )
             } else if (s.remindersEnabled) {
@@ -334,7 +334,7 @@ fun SettingsScreen(store: Store, db: Db, onBack: () -> Unit) {
         // ---- about ----
         item {
             Spacer(Modifier.height(Space.s5))
-            CCard(variant = CardTone.QUIET, compact = true, icon = Ic.INFO, title = "Arc · 0.1.0") {
+            CCard(variant = CardTone.QUIET, compact = true, icon = Ic.INFO, title = "Arc Tracker · 0.1.0") {
                 T(
                     "No network call is made by this app, so there is nothing here to sign in to or opt " +
                         "out of. Screen time, app usage, app blocking and sleep are absent rather than " +

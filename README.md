@@ -1,4 +1,4 @@
-# Cadence — Android
+# Arc Tracker — Android
 
 Native Kotlin + Jetpack Compose. A personal operating system for tasks, habits, goals and focus.
 
@@ -69,7 +69,7 @@ app/src/main/java/com/example/mytracker/
     └─ Sheets.kt            all bottom sheets
 ```
 
-Data lives in `filesDir/cadence.json`, written on a 200ms debounce via write-then-rename so a crash mid-write cannot truncate it. Nothing leaves the device; the app requests no permissions and makes no network calls.
+Data lives in `filesDir/arc.json`, written on a 200ms debounce via write-then-rename so a crash mid-write cannot truncate it. Nothing leaves the device; the app requests no permissions and makes no network calls.
 
 ---
 
